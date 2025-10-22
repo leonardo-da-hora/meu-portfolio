@@ -4,69 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Portfólio - Leonardo</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Portifólio - Gomes da Hora</title>
 </head>
 <body>
-    <!--INÍCIO NAVBAR-->
-    <nav class="nav">
-        <ul class="nav-list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#projetos">Meus Projetos</a></li>
-        </ul>
-    </nav>
-    <!--FIM DA NAVBAR-->
+    <img class="image-gradient" src="img/gradient.png" alt="gradient">
+    <div class="layer-blur"></div>
 
-    <!--INÍCIO DA MAIN-->
-    <section id="home" class="main">
-        <div>
-            <h1>Olá <br> Seja Bem Vindo!</h1>
-            <p>Esse é o meu site de projetos.</p>
-            <a href="#"><button class="call-to-action">Veja meus projetos ❤️</button></a>
-        </div>
-    </section>
-    <!--FIM DA MAIN-->
+    <div class="container">
+        <header>
+            <h1 data-aos="fade-down" data-aos-duration="1500" class="logo">GH</h1>
 
-    <!--INICIO DO SOBRE-->
-    <section id="sobre" class="sobre">
-        <div>
-            <h2>Sobre</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, quisquam? Error ducimus velit 
-                earum voluptate illum, quasi, ea, mollitia amet maxime iure omnis. 
-                Commodi cupiditate facere odio totam perferendis dolor?
-            </p>
-            <br><br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nesciunt non atque laborum voluptas, 
-                animi pariatur, totam eos ex at distinctio! 
-                Incidunt magni doloribus deleniti eos debitis expedita architecto eius.
-            </p>
-        </div>
-        <img src="img/foto-pc.png" alt="eu programando">
-    </section>
-    <!--FIM DO SOBRE-->
+            <nav>
+                <a data-aos="fade-down" data-aos-duration="1500" href="#">Início</a>
+                <a data-aos="fade-down" data-aos-duration="2000" href="#">Sobre</a>
+                <a data-aos="fade-down" data-aos-duration="2500" href="#">Projetos</a>
+                <a data-aos="fade-down" data-aos-duration="3000" href="#">GitHub</a>
+            </nav>
 
-    <!-- INÍCIO PROJETOS -->
-     <section id="projetos" class="projetos">
-        <h2>Meus Projetos</h2>
-        <p>Conheça meus projetos</p>
-        <div class="lista-projetos">
-            <img src="img/projeto1.png" alt="projeto 1">
-            <img src="img/projeto2.png" alt="projeto 2">
-            <img src="img/projeto3.png" alt="projeto 3">
-        </div>
-        <div class="lista-projetos">
-            <img src="img/projeto2.png" alt="projeto 1">
-            <img src="img/projeto3.png" alt="projeto 2">
-            <img src="img/projeto1.png" alt="projeto 3">
-        </div>
-        <a href="#"><button class="action">Fale Comigo</button></a>
-     </section>
-    <!-- FIM PROJETOS -->
+            <button data-aos="fade-down" data-aos-duration="1500" class="btn-signing">Fale Comigo</button>
+        </header>
 
-    <!-- INÍCIO RODAPE -->
-     <footer>
-        <p>&copy; Desenvolvido por Leonardo da Hora</p>
-     </footer>
-    <!-- FIM RODAPE -->
+        <main>
+            <div class="content">
+                <div data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0" data-aos-duration="1500" class="tag-box">
+                    <div class="tag">WhatsApp &wedbar;</div>
+                </div>
+
+                <h1 data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0" data-aos-duration="2000">Leonardo GH <br>Desenvolvedor</h1>
+
+                <p data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0" data-aos-duration="2500" class="description">
+                    Desenvolvedor Web especializado em full-stack 
+                    development. Possuo proficiência em HTML5, CSS3 e 
+                    JavaScript para a construção de interfaces dinâmicas 
+                    e responsivas (utilizando Bootstrap). No backend, atuo 
+                    com Python e o framework Django, garantindo a robustez 
+                    das aplicações. Meu fluxo de trabalho é otimizado com 
+                    Git e GitHub. Também integro funcionalidades de animação e 
+                    sliders através de bibliotecas como AOS e Spline. 
+                </p>
+
+                <div data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0" data-aos-duration="3000" class="buttons">
+                    <a href="#" class="btn-get-started">Instagram &gt;</a>
+                    <a href="#" class="btn-signing-main">Projetos &gt;</a>
+                </div>
+            </div>
+        </main>   
+        
+        <spline-viewer data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0" data-aos-duration="3000" class="robot-3d" url="https://prod.spline.design/9r0EWL2Gl6Idyenv/scene.splinecode"></spline-viewer>
+
+    </div>
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.85/build/spline-viewer.js"></script>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
